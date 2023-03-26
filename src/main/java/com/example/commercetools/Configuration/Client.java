@@ -1,4 +1,4 @@
-package com.example.commercetools.Services;
+package com.example.commercetools.Configuration;
 
 import com.commercetools.api.client.ProjectApiRoot;
 
@@ -15,24 +15,17 @@ import org.springframework.stereotype.Component;
 @Configuration
 public class Client {
 
-    @Value("${clientID}")
-    private String clientId;
-    @Value("${clientSecret}")
-    private String clientSecretId;
-
-    @Value("${projectKey}")
-    private String projectKey;
-
+    @Autowired
+    private Properties properties;
 
     @Bean
     public ProjectApiRoot createApiClient() {
-
         return ApiRootBuilder.of()
                 .defaultClient(ClientCredentials.of()
-                                .withClientId(clientId)
-                                .withClientSecret(clientSecretId)
+                                .withClientId(properties.getClientId())
+                                .withClientSecret(properties.getClientSecret())
                                 .build(),
                         ServiceRegion.GCP_AUSTRALIA_SOUTHEAST1)
-                .build(projectKey);
+                .build(properties.getProjectKey());
     }
 }

@@ -39,11 +39,49 @@
 			<optional>true</optional>
 		</dependency>
 		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>2.10.1</version>
+		</dependency>
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		<dependency>         <groupId>org.springframework.boot</groupId>         <artifactId>spring-boot-starter</artifactId>      </dependency>      <dependency>         <groupId>com.commercetools.sdk</groupId>         <artifactId>commercetools-http-client</artifactId>         <version>${commercetools.version}</version>      </dependency>      <dependency>         <groupId>com.commercetools.sdk</groupId>         <artifactId>commercetools-sdk-java-api</artifactId>         <version>${commercetools.version}</version>      </dependency>      <dependency>         <groupId>com.commercetools.sdk</groupId>         <artifactId>commercetools-sdk-java-importapi</artifactId>         <version>${commercetools.version}</version>      </dependency>      <dependency>         <groupId>com.commercetools.sdk</groupId>         <artifactId>commercetools-sdk-java-ml</artifactId>         <version>${commercetools.version}</version>      </dependency>      <dependency>         <groupId>com.commercetools.sdk</groupId>         <artifactId>commercetools-sdk-java-history</artifactId>         <version>${commercetools.version}</version>      </dependency>      <dependency>         <groupId>org.springframework.boot</groupId>         <artifactId>spring-boot-starter-test</artifactId>         <scope>test</scope>      </dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.commercetools.sdk</groupId>
+			<artifactId>commercetools-http-client</artifactId>
+			<version>${commercetools.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.commercetools.sdk</groupId>
+			<artifactId>commercetools-sdk-java-api</artifactId>
+			<version>${commercetools.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.commercetools.sdk</groupId>
+			<artifactId>commercetools-sdk-java-importapi</artifactId>
+			<version>${commercetools.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.commercetools.sdk</groupId>
+			<artifactId>commercetools-sdk-java-ml</artifactId>
+			<version>${commercetools.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.commercetools.sdk</groupId>
+			<artifactId>commercetools-sdk-java-history</artifactId>
+			<version>${commercetools.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
 
 	</dependencies>
 
